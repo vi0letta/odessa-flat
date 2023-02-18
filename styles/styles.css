@@ -1,7 +1,234 @@
-html {
-  background-image: url(images/background.jpg);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-flex {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (min-width: 1601px) {
+  .container-flex {
+    max-width: 1300px;
+  }
+}
+@media (max-width: 1600px) {
+  .container-flex {
+    max-width: 1300px;
+  }
+}
+@media (max-width: 1080px) {
+  .container-flex {
+    max-width: 1054px;
+  }
+}
+@media (max-width: 904px) {
+  .container-flex {
+    max-width: 890px;
+  }
+}
+@media (max-width: 648px) {
+  .container-flex {
+    max-width: 630px;
+  }
+}
+
+.page-wrap {
+  min-height: 100vh;
+  background-image: url(https://i.pinimg.com/originals/70/66/5d/70665db19777e385cf30a6782b5db629.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
   background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  padding: 0;
+}
+.header__img {
+  max-width: 100px;
+  width: 100%;
+}
+.header__logo {
+  font-size: 15px;
+  font-weight: 600;
+}
+.header .nav-link {
+  padding: 4px;
+  color: black;
+  font-size: 18px;
+}
+.header .navbar-toggler {
+  border: none;
+}
+.header .navbar-toggler:active, .header .navbar-toggler :hover {
+  border: none;
+  color: transparent;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.lang {
+  border: none;
+  background-color: transparent;
+  color: grey;
+}
+
+.navbar-nav {
+  gap: 25px;
+}
+@media (max-width: 992px) {
+  .navbar-nav {
+    gap: 0px;
+  }
+}
+.navbar-nav .dropdown-menu {
+  margin-top: 40px;
+  margin-left: -100px;
+}
+
+.nav-item {
+  display: flex;
+  gap: 5px;
+}
+
+.hover:hover {
+  background-color: rgba(255, 255, 255, 0.2549019608);
+  border-radius: 15px;
+}
+
+nav.navbar.navbar-expand-lg {
+  background: linear-gradient(to bottom, #4c627a 0%, #323845 100%);
+}
+
+.navbar {
+  padding: 20px 0 !important;
+}
+.navbar__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.navbar__txt-size {
+  font-size: 19px !important;
+  font-weight: 500 !important;
+}
+
+.navbar-brand {
+  padding-left: 13px;
+}
+
+.navbar-nav {
+  padding-left: 30px !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.log {
+  text-decoration: underline !important;
+  color: #fff280 !important;
+}
+.log:hover {
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
+
+.main {
+  padding: 30px 0;
+  width: 100%;
+}
+.main__box {
+  background-color: rgba(48, 53, 65, 0.7960784314);
+  border-radius: 15px;
+  color: white;
+  padding: 10px 25px;
+}
+.main__h1 {
+  text-align: center;
+  font-size: 30px;
+  font-style: italic;
+}
+.main__txt {
+  text-indent: 1rem;
+  font-size: 19px;
+}
+.main__card-block {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+}
+.main__card {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  width: 49%;
+  padding: 25px 0;
+}
+.main__card:hover {
+  background-color: rgba(255, 255, 255, 0.2549019608);
+  border-radius: 10px;
+}
+.main__h2 {
+  font-size: 25px;
+  font-style: italic;
+}
+
+.hashtag-box {
+  display: flex;
+  justify-content: end;
+}
+
+.hashtag {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.footer {
+  background: linear-gradient(to bottom, #303541 0%, #495e75 100%);
+  padding: 20px 0;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer__box {
+  padding: 5px;
+}
+.footer__box:hover {
+  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.2549019608);
+  border-radius: 10px;
+  text-decoration: none;
+}
+.footer__link {
+  font-size: 20px;
+  font-weight: 600;
+  color: white !important;
+  text-decoration: none !important;
+  font-size: 17px !important;
 }

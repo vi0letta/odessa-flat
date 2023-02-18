@@ -1,0 +1,27 @@
+.footer {
+    background: linear-gradient(to bottom, #303541 0%, #495e75 100%);
+    padding: 20px 0;
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__box {
+        padding: 5px;
+        &:hover {
+            text-decoration: underline;
+            background-color: #ffffff41;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+    }
+
+    &__link {
+        @include font-properties(20px, 600);
+        color: white !important;
+        text-decoration: none !important;
+        font-size: 17px !important;
+    }
+}

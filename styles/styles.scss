@@ -1,11 +1,61 @@
-html {
-    background-image: url(images/background.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+@import "./reset";
+@import "./header";
   
+
+
+
+.main {
+  padding: 30px 0;
+  width: 100%;
+  &__box {
+    background-color: #303541cb;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 25px;
+  }
+  &__h1 {
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+  }
+  &__txt {
+    text-indent: 1rem;
+    font-size: 19px;
+  }
+  &__card-block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  &__card {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    width: 49%;
+    padding: 25px 0;
+    &:hover {
+      background-color: #ffffff41;
+      border-radius: 10px;
+    }
+  }
+  &__h2 {
+    font-size: 25px;
+    font-style: italic;
+  }
+}
+
+.hashtag-box {
+  display: flex;
+  justify-content: end;
+}
+
+.hashtag {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@import "./footer";

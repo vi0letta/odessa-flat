@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// containers
+$container-width--exlg: 1600px;
+$container-width--lg: 1320px;
+$container-width--md: 1080px; 
+$container-width--sm: 904px;
+$container-width-exsm: 648px;
+$container-space: 15px;
+
+.container-flex {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (min-width: 1601px) {
+        max-width: 1300px;
+    }
+
+    @media (max-width: 1600px) {
+        max-width: 1270px + 15px * 2;
+    }
+
+    @media (max-width: 1080px) {
+        max-width: 1024px  + 15px * 2;
+    }
+
+    @media (max-width: 904px) {
+        max-width: 860px  + 15px * 2;
+    }
+
+    @media (max-width: 648px) {
+        max-width: 600px  + 15px * 2;
+    }
+}
+
+.page-wrap {
+    min-height: 100vh;
+    background-image: url(https://i.pinimg.com/originals/70/66/5d/70665db19777e385cf30a6782b5db629.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@mixin font-properties 
+($font-size, $font-weight) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
+%flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
