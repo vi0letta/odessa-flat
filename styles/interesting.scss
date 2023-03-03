@@ -1,0 +1,45 @@
+@import "./reset";
+@import "./header";
+
+  
+  
+.main{
+    background-color: #d7f5ff;
+    &__h1 {
+        padding-top: 15px;
+        text-align: center;
+        font-size: 30px;
+        font-style: italic;
+    }
+    &__link {
+        font-size: 25px;
+        text-align: center;
+        font-style: italic;
+        padding-bottom: 10px;
+    }
+    &__txt {
+        font-size: 18px;
+        padding-top: 30px;
+    }
+    &__img {
+        max-height: 250px;
+        box-shadow: 2px 2px 7px black;
+    }
+    &__card {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        padding: 20px 0 20px;
+        border-bottom: 1px solid #000;
+    }
+}
+
+.read-more {
+    padding-left: 6px;
+    color: #424a5a;
+}
+
+
+
+
+@import "./footer";
