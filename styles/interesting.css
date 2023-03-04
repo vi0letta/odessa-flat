@@ -142,44 +142,131 @@ nav.navbar.navbar-expand-lg {
 }
 
 .main {
-  background-color: #d7f5ff;
+  background-color: #ffffff;
 }
 .main__h1 {
-  padding-top: 15px;
+  padding-top: 25px;
   text-align: center;
   font-size: 30px;
   font-style: italic;
 }
 .main__link {
-  font-size: 25px;
-  text-align: center;
+  font-size: 22px;
   font-style: italic;
-  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  color: rgb(47, 47, 47);
+}
+.main__link:hover {
+  color: #717171;
 }
 .main__txt {
   font-size: 18px;
-  padding-top: 30px;
+  padding-top: 10px;
+  max-width: 945px;
 }
 .main__img {
-  max-height: 250px;
-  box-shadow: 2px 2px 7px black;
+  max-width: 210px;
+  width: 100%;
+  box-shadow: 3px 3px 10px black;
+  border-radius: 8px;
 }
 .main__card {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 25px;
   padding: 20px 0 20px;
-  border-bottom: 1px solid #000;
+}
+
+.outer {
+  display: block;
+  padding: 20px 0;
+  position: relative;
+  background: #f3eeeb;
+  margin-left: 20px;
+}
+
+.inner {
+  position: relative;
+  padding: 0px 40px;
+  background: #f3eeeb;
+}
+
+.main__txt {
+  font-size: 18px;
 }
 
 .read-more {
   padding-left: 6px;
-  color: #424a5a;
+  color: #556075;
+  font-style: italic;
+  color: #333;
+  margin: 0;
+}
+.read-more:hover {
+  color: #717171;
+}
+
+.inner {
+  margin: 0 -20px;
+}
+
+.inner::before, .inner::after, .outer::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 20px solid #000;
+  box-sizing: border-box;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.inner::before {
+  bottom: -60px;
+  left: -40px;
+  clip: rect(auto, auto, 40px, 40px);
+  border-color: #f3eeeb;
+}
+
+.inner::after {
+  bottom: -60px;
+  right: -40px;
+  clip: rect(auto, 40px, 40px, auto);
+  border-color: #f3eeeb;
+}
+
+.outer::before {
+  top: -40px;
+  left: -60px;
+  clip: rect(40px, auto, auto, 40px);
+  border-color: #f3eeeb;
+}
+
+.outer::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 20px solid #000;
+  box-sizing: border-box;
+  z-index: 1;
+  border-radius: 50%;
+  top: -40px;
+  right: -60px;
+  clip: rect(40px, 40px, auto, auto);
+  border-color: #f3eeeb;
+}
+
+p {
+  margin-bottom: 0 !important;
 }
 
 .footer {
   background: linear-gradient(to bottom, #303541 0%, #495e75 100%);
   padding: 20px 0;
+  margin-top: 20px;
 }
 .footer__nav {
   display: flex;

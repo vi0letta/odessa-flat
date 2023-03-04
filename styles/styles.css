@@ -225,6 +225,7 @@ nav.navbar.navbar-expand-lg {
 .footer {
   background: linear-gradient(to bottom, #303541 0%, #495e75 100%);
   padding: 20px 0;
+  margin-top: 20px;
 }
 .footer__nav {
   display: flex;
