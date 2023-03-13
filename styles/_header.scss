@@ -25,6 +25,19 @@
     } 
 }
 
+.btn {
+    padding: 2px 1px !important;
+}
+
+.modal-title {
+    text-align: center;
+    padding-left: 40px;
+}
+
+.modal-footer {
+    justify-content: center !important;
+}
+
 .logo {
     display: flex;
     flex-direction: column;

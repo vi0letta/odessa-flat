@@ -69,6 +69,19 @@ body {
   color: transparent;
 }
 
+.btn {
+  padding: 2px 1px !important;
+}
+
+.modal-title {
+  text-align: center;
+  padding-left: 40px;
+}
+
+.modal-footer {
+  justify-content: center !important;
+}
+
 .logo {
   display: flex;
   flex-direction: column;
@@ -171,6 +184,11 @@ nav.navbar.navbar-expand-lg {
   text-indent: 1rem;
   font-size: 19px;
 }
+@media (max-width: 420px) {
+  .main__txt {
+    font-size: 16px;
+  }
+}
 .main__card-block {
   display: flex;
   flex-wrap: wrap;
@@ -180,31 +198,77 @@ nav.navbar.navbar-expand-lg {
 }
 .main__card {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
+  flex-direction: row;
   align-items: center;
-  padding: 10px;
   width: 49%;
-  padding: 25px 0;
   cursor: pointer;
 }
 .main__card:hover {
   background-color: rgba(255, 255, 255, 0.2549019608);
   border-radius: 10px;
 }
+@media (max-width: 768px) {
+  .main__card {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
 .main__h2 {
   font-size: 25px;
   font-style: italic;
-  text-align: center;
+}
+@media (max-width: 1035px) {
+  .main__h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 860px) {
+  .main__h2 {
+    font-size: 20px;
+    width: 310px;
+  }
+}
+@media (max-width: 768px) {
+  .main__h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 530px) {
+  .main__h2 {
+    font-size: 21px;
+  }
+}
+@media (max-width: 420px) {
+  .main__none {
+    display: none;
+  }
+}
+.main__h2-none {
+  font-style: italic;
+  display: none;
+}
+@media (max-width: 420px) {
+  .main__h2-none {
+    display: block;
+    font-size: 21px;
+  }
 }
 .main__img {
   max-width: 144px;
 }
-.main__img:hover {
-  max-width: 100px !important;
+@media (max-width: 860px) {
+  .main__img {
+    max-width: 100px;
+  }
 }
 .main__img-3 {
   max-width: 100px;
+  margin: 20px;
+}
+@media (max-width: 860px) {
+  .main__img-3 {
+    max-width: 60px;
+  }
 }
 
 .hashtag-box {
@@ -219,6 +283,11 @@ nav.navbar.navbar-expand-lg {
 @media (max-width: 980px) {
   .hashtag {
     font-size: 17px;
+  }
+}
+@media (max-width: 450px) {
+  .hashtag {
+    font-size: 14px;
   }
 }
 
