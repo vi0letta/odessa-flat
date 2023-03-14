@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-flex {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (min-width: 1601px) {
+  .container-flex {
+    max-width: 1300px;
+  }
+}
+@media (max-width: 1600px) {
+  .container-flex {
+    max-width: 1300px;
+  }
+}
+@media (max-width: 1080px) {
+  .container-flex {
+    max-width: 1054px;
+  }
+}
+@media (max-width: 904px) {
+  .container-flex {
+    max-width: 890px;
+  }
+}
+@media (max-width: 648px) {
+  .container-flex {
+    max-width: 630px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  padding: 0;
+}
+.header__img {
+  max-width: 100px;
+  width: 100%;
+}
+.header__logo {
+  font-size: 15px;
+  font-weight: 600;
+}
+.header .nav-link {
+  padding: 4px;
+  color: black;
+  font-size: 18px;
+}
+.header .navbar-toggler {
+  border: none;
+}
+.header .navbar-toggler:active, .header .navbar-toggler :hover {
+  border: none;
+  color: transparent;
+}
+
+.btn {
+  padding: 2px 1px !important;
+}
+
+.modal-title {
+  text-align: center;
+  padding-left: 40px;
+}
+
+.modal-footer {
+  justify-content: center !important;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.lang {
+  border: none;
+  background-color: transparent;
+  color: grey;
+}
+
+.navbar-nav {
+  gap: 25px;
+}
+@media (max-width: 1080px) {
+  .navbar-nav {
+    gap: 2px;
+  }
+}
+.navbar-nav .dropdown-menu {
+  margin-top: 40px;
+  margin-left: -100px;
+}
+
+.nav-item {
+  display: flex;
+}
+
+.hover:hover {
+  background-color: rgba(255, 255, 255, 0.2549019608);
+  border-radius: 15px;
+}
+
+nav.navbar.navbar-expand-lg {
+  background: linear-gradient(to bottom, #4c627a 0%, #323845 100%);
+}
+
+.navbar {
+  padding: 20px 0 !important;
+}
+.navbar__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.navbar__txt-size {
+  font-size: 19px !important;
+  font-weight: 500 !important;
+}
+
+.navbar-brand {
+  padding-left: 13px;
+}
+
+.navbar-nav {
+  padding-left: 30px !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.log {
+  text-decoration: underline !important;
+  color: #fff280 !important;
+}
+.log:hover {
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 0 10px;
+}
+.main__box {
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+}
+.main__img {
+  width: 100%;
+  max-width: 680px;
+}
+.main__admin-comm {
+  font-size: 18px;
+  max-width: 680px;
+  padding-top: 10px;
+  text-indent: 10px;
+}
+@media (max-width: 520px) {
+  .main__admin-comm {
+    font-size: 15px;
+  }
+}
+.main__img-sm {
+  max-width: 40px;
+  width: 100%;
+  padding-left: 5px;
+}
+@media (max-width: 520px) {
+  .main__img-sm {
+    max-width: 35px;
+  }
+}
+
+.btn:active {
+  border: 1px solid white !important;
+}
+
+.input-group-text {
+  background-color: #a5ca6b !important;
+  border-radius: 0 3px 3px 0 !important;
+  border: none !important;
+  font-style: italic !important;
+}
+
+.card {
+  border: 0 !important;
+  margin-left: 5px !important;
+}
+
+.input-group {
+  flex-wrap: nowrap !important;
+}
+
+.input-field {
+  padding: 5px;
+  min-height: 50px;
+  width: 100% !important;
+  max-width: 640px !important;
+}
+@media (max-width: 520px) {
+  .input-field {
+    min-height: 30px;
+  }
+}
+
+.footer {
+  background: linear-gradient(to bottom, #303541 0%, #495e75 100%);
+  padding: 20px 0;
+  margin-top: 20px;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer__box {
+  padding: 5px;
+}
+.footer__box:hover {
+  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.2549019608);
+  border-radius: 10px;
+  text-decoration: none;
+}
+.footer__link {
+  font-size: 20px;
+  font-weight: 600;
+  color: white !important;
+  text-decoration: none !important;
+  font-size: 17px !important;
+}
