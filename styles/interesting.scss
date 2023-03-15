@@ -1,14 +1,14 @@
 @import "./reset";
 @import "./header";
 
-  
+
   
 .main{
     background-color: #ffffff;
     &__h1 {
-        padding-top: 25px;
+        padding: 25px 0 15px;
         text-align: center;
-        font-size: 30px;
+        font-size: 25px;
         font-style: italic;
     }
     &__link {
@@ -20,25 +20,72 @@
         &:hover {
             color: #717171;
         }
+        @media (max-width: 1060px) {
+            max-width: 300px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            font-size: 20px;
+        }
+        @media (max-width:578px) {
+            max-width: 200px;
+            font-size: 18px;
+        }
+        
     }
     &__txt {
         font-size: 18px;
         padding-top: 10px;
-        max-width: 945px;
+        max-width: 915px;
+        @media (max-width: 1325px) {
+            max-width: 640px;
+        }
+        @media (max-width: 1060px) {
+            max-width: 450px;
+            font-size: 16px !important;
+        }
+        @media (max-width: 860px) {
+            padding-top: 7px;
+            max-width: 325px;
+        }
+        @media (max-width:686px) {
+            max-width: 400px;
+        }
+        @media (max-width: 578px) {
+            max-width: 205px;
+            font-size: 14px !important;
+        }
     }
     &__img {
         max-width: 210px;
         width: 100%;
         box-shadow: 3px 3px 10px black;
         border-radius: 8px;
+        @media (max-width:686px) {
+            max-width: 320px;
+        }
+        @media (max-width:578px) {
+            max-width: 260px;
+        }
     }
     &__card {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         gap: 25px;
         padding: 20px 0 20px;
-        
+        @media (max-width: 768px) {
+            gap: 15px;
+            justify-content: start;
+        }
+        @media (max-width: 686px) {
+            flex-direction: column;
+            gap: 25px;
+        }
+        @media (max-width:578px) {
+            align-items: start;
+        }
     }
 }
 
