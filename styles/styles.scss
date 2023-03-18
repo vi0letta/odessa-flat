@@ -1,6 +1,10 @@
 @import "./reset";
 @import "./header";
   
+a {
+  color: white !important;
+  text-decoration: none !important;
+}
 
 .page-wrap {
   min-height: 100vh;

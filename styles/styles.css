@@ -154,6 +154,11 @@ nav.navbar.navbar-expand-lg {
   cursor: pointer !important;
 }
 
+a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
 .page-wrap {
   min-height: 100vh;
   background-image: url(https://i.pinimg.com/originals/70/66/5d/70665db19777e385cf30a6782b5db629.jpg);
