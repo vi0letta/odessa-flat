@@ -27,9 +27,7 @@ a {
     padding: 10px 25px;
   }
   &__h1 {
-    text-align: center;
-    font-size: 30px;
-    font-style: italic;
+    font-size: 30px !important;
   }
   &__txt {
     text-indent: 1rem;

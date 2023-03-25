@@ -187,9 +187,7 @@ a {
   padding: 10px 25px;
 }
 .main__h1 {
-  text-align: center;
-  font-size: 30px;
-  font-style: italic;
+  font-size: 30px !important;
 }
 .main__txt {
   text-indent: 1rem;
