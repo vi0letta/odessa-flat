@@ -34,7 +34,6 @@ a {
   &__txt {
     text-indent: 1rem;
     font-size: 19px;
-
     @media (max-width:420px) {
       font-size: 16px;
     }
@@ -57,7 +56,6 @@ a {
       background-color: #ffffff41;
       border-radius: 10px;
     }
-
     @media (max-width:768px) {
       width: 100%;
       justify-content: space-around;
@@ -67,31 +65,25 @@ a {
   &__h2 {
     font-size: 25px;
     font-style: italic;
-
     @media (max-width:1035px) {
       font-size: 20px;
     }
-
     @media (max-width: 860px) {
       font-size: 20px;
       width: 310px;
     }
-
     @media (max-width: 768px) {
       font-size: 25px;
     }
-
     @media (max-width:530px) {
       font-size: 21px;
     }
   }
-
   &__none {
     @media (max-width:420px) {
       display: none;
     }
   }
-
   &__h2-none {
     font-style: italic;
     display: none;
@@ -104,7 +96,6 @@ a {
 
   &__img {
     max-width: 144px;
-
     @media (max-width: 860px) {
       max-width: 100px;
     }
@@ -113,15 +104,10 @@ a {
   &__img-3 {
     max-width: 100px;
     margin: 20px;
-    
     @media (max-width: 860px) {
       max-width: 60px;
     }
   }
-
-
-
-  
 }
 
 .hashtag-box {

@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+h1 {
+  text-align: center;
+  font-size: 25px !important;
+  font-style: italic !important;
+}
+
 .container-flex {
   width: 100%;
   margin: 0 auto;
@@ -154,11 +160,6 @@ nav.navbar.navbar-expand-lg {
   cursor: pointer !important;
 }
 
-.main__h1 {
-  text-align: center;
-  font-size: 25px;
-  font-style: italic;
-}
 .main__content {
   display: flex;
   flex-direction: column;
@@ -170,7 +171,7 @@ nav.navbar.navbar-expand-lg {
   border-bottom: 1px solid #000;
   padding-bottom: 10px;
 }
-.main__img {
+.main__img-ph {
   width: 100%;
   max-width: 680px;
 }
@@ -185,14 +186,14 @@ nav.navbar.navbar-expand-lg {
     font-size: 15px;
   }
 }
-.main__img-sm {
+.main__img-sm-ph {
   max-width: 40px;
   width: 100%;
   padding-left: 5px;
   margin-right: 10px;
 }
 @media (max-width: 520px) {
-  .main__img-sm {
+  .main__img-sm-ph {
     max-width: 35px;
   }
 }

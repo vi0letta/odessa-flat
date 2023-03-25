@@ -5,18 +5,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-// containers
-$container-width--exlg: 1600px;
-$container-width--lg: 1320px;
-$container-width--md: 1080px; 
-$container-width--sm: 904px;
-$container-width-exsm: 648px;
-$container-space: 15px;
-
+h1 {
+    text-align: center;
+    font-size: 25px !important;
+    font-style: italic !important;
+}
 .container-flex {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto; 
     padding: 0 15px;
 
     @media (min-width: 1601px) {
@@ -51,13 +47,6 @@ a {
     font-size: $font-size;
     font-weight: $font-weight;
 }
-
-%flex {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
 
 body {
     font-family: 'Montserrat', sans-serif;

@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+h1 {
+  text-align: center;
+  font-size: 25px !important;
+  font-style: italic !important;
+}
+
 .container-flex {
   width: 100%;
   margin: 0 auto;

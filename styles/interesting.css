@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+h1 {
+  text-align: center;
+  font-size: 25px !important;
+  font-style: italic !important;
+}
+
 .container-flex {
   width: 100%;
   margin: 0 auto;
@@ -157,14 +163,11 @@ nav.navbar.navbar-expand-lg {
 .main {
   background-color: #ffffff;
 }
-.main__h1 {
+.main__h1-int {
   padding: 25px 0 15px;
-  text-align: center;
-  font-size: 25px;
-  font-style: italic;
 }
 @media (max-width: 578px) {
-  .main__h1 {
+  .main__h1-int {
     font-size: 20px;
   }
 }
@@ -195,58 +198,58 @@ nav.navbar.navbar-expand-lg {
     font-size: 18px;
   }
 }
-.main__txt {
+.main__txt-int {
   font-size: 18px;
   padding-top: 10px;
   max-width: 915px;
 }
 @media (max-width: 1325px) {
-  .main__txt {
+  .main__txt-int {
     max-width: 640px;
   }
 }
 @media (max-width: 1060px) {
-  .main__txt {
+  .main__txt-int {
     max-width: 450px;
     font-size: 16px !important;
   }
 }
 @media (max-width: 860px) {
-  .main__txt {
+  .main__txt-int {
     padding-top: 7px;
     max-width: 325px;
   }
 }
 @media (max-width: 686px) {
-  .main__txt {
+  .main__txt-int {
     max-width: 400px;
   }
 }
 @media (max-width: 578px) {
-  .main__txt {
+  .main__txt-int {
     max-width: 205px;
     font-size: 14px !important;
     padding-bottom: 10px;
   }
 }
-.main__img {
+.main__img-int {
   max-width: 210px;
   width: 100%;
   box-shadow: 3px 3px 10px black;
   border-radius: 8px;
 }
 @media (max-width: 686px) {
-  .main__img {
+  .main__img-int {
     max-width: 320px;
   }
 }
 @media (max-width: 578px) {
-  .main__img {
+  .main__img-int {
     max-width: 260px;
     margin-left: 10px;
   }
 }
-.main__card {
+.main__card-int {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -255,13 +258,13 @@ nav.navbar.navbar-expand-lg {
   padding: 20px 0 20px;
 }
 @media (max-width: 768px) {
-  .main__card {
+  .main__card-int {
     gap: 15px;
     justify-content: start;
   }
 }
 @media (max-width: 686px) {
-  .main__card {
+  .main__card-int {
     flex-direction: column;
     gap: 25px;
     margin-left: -22px;

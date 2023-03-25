@@ -5,11 +5,8 @@
   
 .main{
     background-color: #ffffff;
-    &__h1 {
+    &__h1-int {
         padding: 25px 0 15px;
-        text-align: center;
-        font-size: 25px;
-        font-style: italic;
         @media (max-width: 578px) {
             font-size: 20px;
         }
@@ -36,7 +33,7 @@
         }
         
     }
-    &__txt {
+    &__txt-int {
         font-size: 18px;
         padding-top: 10px;
         max-width: 915px;
@@ -60,7 +57,7 @@
             padding-bottom: 10px;
         }
     }
-    &__img {
+    &__img-int {
         max-width: 210px;
         width: 100%;
         box-shadow: 3px 3px 10px black;
@@ -73,7 +70,7 @@
             margin-left: 10px;
         }
     }
-    &__card {
+    &__card-int {
         display: flex;
         flex-direction: row;
         align-items: center;
