@@ -264,6 +264,7 @@ nav.navbar.navbar-expand-lg {
   .main__card {
     flex-direction: column;
     gap: 25px;
+    margin-left: -22px;
   }
 }
 .main__txt-article {
