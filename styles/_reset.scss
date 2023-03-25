@@ -43,7 +43,7 @@ $container-space: 15px;
 
 a {
     text-decoration: none;
-    color: black;
+    color: black !important;
 }
 
 @mixin font-properties 
