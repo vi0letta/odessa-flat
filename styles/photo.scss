@@ -40,6 +40,69 @@
             max-width: 35px;
         }
     }
+
+    &__comments-block {
+        padding-top: 20px;
+    }
+
+    &__comment-block {
+        max-width: 680px;
+
+    }
+
+    &__info-uzer {
+        padding: 10px 0 10px 10px;
+        display: flex;
+        gap: 10px;
+    }
+
+    &__avatar {
+        width: 25px;
+        height: 25px;
+        border-radius: 50px;
+    }
+
+    &__nickname {
+        font-size: 19px;
+    }
+
+    &__comm {
+        text-indent: 1rem;
+        @media (max-width: 680px) {
+            font-size: 14px;
+        }
+    }
+
+    &__reply {
+        display: flex;
+        justify-content: end;
+    }
+
+    &__btn-reply {
+        background-color: #a5ca6b;
+        border-radius: 20px;
+        padding: 5px 15px;
+        border: none;
+        @media (max-width: 680px) {
+            font-size: 14px;
+        }
+    }
+
+    &__comment-ansver {
+        padding-left: 40px;
+        max-width: 680px;
+        
+    }
+
+    &__info-resp {
+        display: flex;
+        padding-left: 40px;
+    }
+
+    &__reply-img {
+        width: 15px;
+        height: 15px;
+    }
 }
 
 .svg-sm {

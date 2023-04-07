@@ -197,6 +197,60 @@ nav.navbar.navbar-expand-lg {
     max-width: 35px;
   }
 }
+.main__comments-block {
+  padding-top: 20px;
+}
+.main__comment-block {
+  max-width: 680px;
+}
+.main__info-uzer {
+  padding: 10px 0 10px 10px;
+  display: flex;
+  gap: 10px;
+}
+.main__avatar {
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+}
+.main__nickname {
+  font-size: 19px;
+}
+.main__comm {
+  text-indent: 1rem;
+}
+@media (max-width: 680px) {
+  .main__comm {
+    font-size: 14px;
+  }
+}
+.main__reply {
+  display: flex;
+  justify-content: end;
+}
+.main__btn-reply {
+  background-color: #a5ca6b;
+  border-radius: 20px;
+  padding: 5px 15px;
+  border: none;
+}
+@media (max-width: 680px) {
+  .main__btn-reply {
+    font-size: 14px;
+  }
+}
+.main__comment-ansver {
+  padding-left: 40px;
+  max-width: 680px;
+}
+.main__info-resp {
+  display: flex;
+  padding-left: 40px;
+}
+.main__reply-img {
+  width: 15px;
+  height: 15px;
+}
 
 .svg-sm {
   max-width: 27px;

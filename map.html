@@ -66,10 +66,42 @@
 
         <main class="main">
             <div class="container-flex">
-                <div class="main__map"></div>
-                <div class="main__add-buttons">
-                    <a href="./photo.html"><button class="main__btn-add">Фото</button></a>
-                    <button class="main__btn-add">Добавить фото</button>
+                <div class="main__map">
+                  <div class="main__btn-group">
+                    <div class="main__add-buttons">
+                      <a href="./photo.html"><button class="main__btn-add">Фото</button></a>
+                      <button class="main__btn-add" style="margin-right: 33px">Добавить фото</button>
+                    </div>
+                    <div class="main__hidden-btn">
+                      <label for="file_out" class="main__btn-add">Выберите файл</label>
+                      <input type="file" id="file_out" class="main__btn-hid">
+                      <button type="button" class="btn btn-primary main__btn-add" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Загрузить
+                      </button>
+                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title" id="staticBackdropLabel">Добавить описание</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <textarea name="" id="" cols="50" class="main__modal-area"></textarea>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn main__btn-add" data-bs-dismiss="modal">Закрыть</button>
+                              <button type="button" class="btn main__btn-add">Сохранить</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="main__btn-add">Отмена</button>
+                    </div>
+                    
+                    <div class="modal-dialog modal-dialog-centered">
+                      
+                    </div>
+                  </div>
                 </div>
             </div>
         </main>
